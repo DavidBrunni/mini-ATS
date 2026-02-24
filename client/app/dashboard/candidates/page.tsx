@@ -43,36 +43,40 @@ function isStage(s: string): s is Stage {
 function KanbanColumn({
   stage,
   candidates,
+  jobTitle,
 }: {
   stage: Stage;
   candidates: Candidate[];
+  jobTitle: string;
 }) {
   const { setNodeRef, isOver } = useDroppable({ id: stage });
 
   return (
     <div
       ref={setNodeRef}
-      className={`flex min-h-[120px] w-44 flex-shrink-0 flex-col rounded-lg border-2 bg-zinc-100/80 p-2 dark:bg-zinc-800/80 ${
+      className={`flex min-h-[80px] w-52 flex-shrink-0 flex-col rounded-md border bg-zinc-100/90 py-1.5 px-1.5 dark:bg-zinc-800/90 ${
         isOver ? "border-zinc-400 dark:border-zinc-500" : "border-zinc-200 dark:border-zinc-700"
       }`}
     >
-      <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+      <h3 className="mb-1.5 px-1.5 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
         {stage}
       </h3>
-      <div className="flex min-h-[4rem] flex-1 flex-col gap-2">
+      <div className="flex min-h-[3rem] flex-1 flex-col gap-1.5 overflow-y-auto">
         {candidates.length === 0 ? (
-          <p className="py-4 text-center text-xs text-zinc-400 dark:text-zinc-500">
-            No candidates
+          <p className="py-2 text-center text-[11px] text-zinc-400 dark:text-zinc-500">
+            —
           </p>
         ) : (
-          candidates.map((c) => <DraggableCard key={c.id} candidate={c} />)
+          candidates.map((c) => (
+            <DraggableCard key={c.id} candidate={c} jobTitle={jobTitle} />
+          ))
         )}
       </div>
     </div>
   );
 }
 
-function DraggableCard({ candidate }: { candidate: Candidate }) {
+function DraggableCard({ candidate, jobTitle }: { candidate: Candidate; jobTitle: string }) {
   const { attributes, listeners, setNodeRef, isDragging } = useDraggable({
     id: candidate.id,
     data: { candidate },
@@ -83,19 +87,27 @@ function DraggableCard({ candidate }: { candidate: Candidate }) {
       ref={setNodeRef}
       {...listeners}
       {...attributes}
-      className={`cursor-grab rounded-md border border-zinc-200 bg-white p-3 shadow-sm active:cursor-grabbing dark:border-zinc-600 dark:bg-zinc-900 ${
+      className={`cursor-grab rounded border border-zinc-200 bg-white p-2 shadow-sm active:cursor-grabbing dark:border-zinc-600 dark:bg-zinc-900 ${
         isDragging ? "opacity-50" : ""
       }`}
     >
-      <p className="font-medium text-zinc-900 dark:text-zinc-100">{candidate.name}</p>
+      <p className="truncate text-sm font-medium text-zinc-900 dark:text-zinc-100">
+        {candidate.name}
+      </p>
+      {jobTitle ? (
+        <p className="mt-0.5 truncate text-[11px] text-zinc-500 dark:text-zinc-400">
+          {jobTitle}
+        </p>
+      ) : null}
       {candidate.linkedin_url ? (
         <a
           href={candidate.linkedin_url}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-1 block truncate text-xs text-blue-600 hover:underline dark:text-blue-400"
+          className="mt-0.5 flex items-center gap-1 text-[11px] text-blue-600 hover:underline dark:text-blue-400"
           onClick={(e) => e.stopPropagation()}
         >
+          <LinkedInIcon />
           LinkedIn
         </a>
       ) : null}
@@ -103,12 +115,34 @@ function DraggableCard({ candidate }: { candidate: Candidate }) {
   );
 }
 
-function DragOverlayCard({ candidate }: { candidate: Candidate }) {
+function LinkedInIcon() {
   return (
-    <div className="w-40 rounded-md border border-zinc-200 bg-white p-3 shadow-lg dark:border-zinc-600 dark:bg-zinc-900">
-      <p className="font-medium text-zinc-900 dark:text-zinc-100">{candidate.name}</p>
+    <svg className="h-3 w-3 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+    </svg>
+  );
+}
+
+function DragOverlayCard({
+  candidate,
+  jobTitle,
+}: {
+  candidate: Candidate;
+  jobTitle: string;
+}) {
+  return (
+    <div className="w-48 rounded border border-zinc-200 bg-white p-2 shadow-lg dark:border-zinc-600 dark:bg-zinc-900">
+      <p className="truncate text-sm font-medium text-zinc-900 dark:text-zinc-100">
+        {candidate.name}
+      </p>
+      {jobTitle ? (
+        <p className="mt-0.5 truncate text-[11px] text-zinc-500 dark:text-zinc-400">
+          {jobTitle}
+        </p>
+      ) : null}
       {candidate.linkedin_url ? (
-        <span className="mt-1 block truncate text-xs text-blue-600 dark:text-blue-400">
+        <span className="mt-0.5 flex items-center gap-1 text-[11px] text-blue-600 dark:text-blue-400">
+          <LinkedInIcon />
           LinkedIn
         </span>
       ) : null}
@@ -384,17 +418,23 @@ export default function CandidatesPage() {
             onDragStart={handleDragStart}
             onDragEnd={handleDragEnd}
           >
-            <div className="flex gap-4 overflow-x-auto pb-4">
+            <div className="flex gap-2 overflow-x-auto pb-4">
               {STAGES.map((stage) => (
                 <KanbanColumn
                   key={stage}
                   stage={stage}
                   candidates={candidatesByStage[stage]}
+                  jobTitle={job?.title ?? ""}
                 />
               ))}
             </div>
             <DragOverlay>
-              {activeCandidate ? <DragOverlayCard candidate={activeCandidate} /> : null}
+              {activeCandidate ? (
+                <DragOverlayCard
+                  candidate={activeCandidate}
+                  jobTitle={job?.title ?? ""}
+                />
+              ) : null}
             </DragOverlay>
           </DndContext>
           {candidates.length === 0 && (
