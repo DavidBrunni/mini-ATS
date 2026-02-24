@@ -151,24 +151,23 @@ export default function DashboardPage() {
             </li>
           )}
           {jobs.map((job) => (
-            <li
-              key={job.id}
-              className="rounded-md border border-zinc-200 bg-white px-4 py-3 dark:border-zinc-800 dark:bg-zinc-900"
-            >
-              <div className="flex items-center justify-between gap-2">
-                <span className="font-medium text-zinc-900 dark:text-zinc-100">
-                  {job.title}
+            <li key={job.id}>
+              <Link
+                href={`/jobs/${job.id}/candidates`}
+                className="block rounded-md border border-zinc-200 bg-white px-4 py-3 transition-colors hover:bg-zinc-50 hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:bg-zinc-800 dark:hover:border-zinc-700"
+              >
+                <div className="flex items-center justify-between gap-2">
+                  <span className="font-medium text-zinc-900 dark:text-zinc-100">
+                    {job.title}
+                  </span>
+                  <span className="text-sm text-zinc-500 dark:text-zinc-400">
+                    Kandidater →
+                  </span>
+                </div>
+                <span className="mt-1 block text-xs text-zinc-500 dark:text-zinc-400">
+                  {new Date(job.created_at).toLocaleDateString()}
                 </span>
-                <Link
-                  href="/dashboard/candidates"
-                  className="text-sm text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-300"
-                >
-                  Kandidater →
-                </Link>
-              </div>
-              <span className="mt-1 block text-xs text-zinc-500 dark:text-zinc-400">
-                {new Date(job.created_at).toLocaleDateString()}
-              </span>
+              </Link>
             </li>
           ))}
         </ul>
