@@ -5,10 +5,12 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { supabase } from "@/lib/supabaseClient";
 import type { User } from "@supabase/supabase-js";
+import { Navbar } from "../components/Navbar";
 
 type Profile = {
   id: string;
   organization_id: string;
+  role?: string;
 };
 
 type Job = {
@@ -21,6 +23,7 @@ type Job = {
 export default function DashboardPage() {
   const router = useRouter();
   const [user, setUser] = useState<User | null>(null);
+  const [userRole, setUserRole] = useState<string>("customer");
   const [organizationId, setOrganizationId] = useState<string | null>(null);
   const [jobs, setJobs] = useState<Job[]>([]);
   const [newJobTitle, setNewJobTitle] = useState("");
@@ -41,7 +44,7 @@ export default function DashboardPage() {
 
       const { data: profile, error: profileError } = await supabase
         .from("profiles")
-        .select("id, organization_id")
+        .select("id, organization_id, role")
         .eq("id", currentUser.id)
         .maybeSingle();
 
@@ -51,6 +54,7 @@ export default function DashboardPage() {
         return;
       }
 
+      setUserRole(profile.role ?? "customer");
       setOrganizationId(profile.organization_id);
       await fetchJobs(profile.organization_id);
       setLoading(false);
@@ -110,9 +114,16 @@ export default function DashboardPage() {
   }
 
   return (
-    <div className="min-h-screen bg-zinc-50 p-6 dark:bg-zinc-950 sm:p-8">
-      <div className="mx-auto max-w-2xl">
-        <h1 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950">
+      <Navbar email={user?.email ?? ""} role={userRole} />
+      <div className="mx-auto max-w-2xl p-6 sm:p-8">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-1 text-sm text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-300"
+        >
+          ← Startsida
+        </Link>
+        <h1 className="mt-2 text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
           Dashboard
         </h1>
         <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">

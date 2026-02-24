@@ -15,6 +15,7 @@ import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabaseClient";
+import { Navbar } from "@/app/components/Navbar";
 
 const STAGES = ["Applied", "Screening", "Interview", "Offer", "Hired"] as const;
 type Stage = (typeof STAGES)[number];
@@ -156,6 +157,8 @@ export default function JobCandidatesPage() {
   const [candidates, setCandidates] = useState<Candidate[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [userEmail, setUserEmail] = useState("");
+  const [userRole, setUserRole] = useState("customer");
   const [searchQuery, setSearchQuery] = useState("");
   const [newName, setNewName] = useState("");
   const [newLinkedIn, setNewLinkedIn] = useState("");
@@ -177,6 +180,14 @@ export default function JobCandidatesPage() {
         router.replace("/login");
         return;
       }
+
+      setUserEmail(user.email ?? "");
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("role")
+        .eq("id", user.id)
+        .maybeSingle();
+      setUserRole(profile?.role ?? "customer");
 
       setLoading(true);
       setError(null);
@@ -284,8 +295,8 @@ export default function JobCandidatesPage() {
   if (!jobId) {
     return (
       <div className="min-h-screen bg-zinc-50 p-6 dark:bg-zinc-950 sm:p-8">
-        <Link href="/dashboard" className="text-sm text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-300">
-          ← Back to dashboard
+        <Link href="/" className="text-sm text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-300">
+          ← Till startsidan
         </Link>
         <p className="mt-4 text-red-600 dark:text-red-400">Missing job ID.</p>
       </div>
@@ -301,13 +312,14 @@ export default function JobCandidatesPage() {
   }
 
   return (
-    <div className="min-h-screen bg-zinc-50 p-6 dark:bg-zinc-950 sm:p-8">
-      <div className="mx-auto max-w-5xl">
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950">
+      <Navbar email={userEmail} role={userRole} />
+      <div className="mx-auto max-w-5xl p-6 sm:p-8">
         <Link
           href="/dashboard"
-          className="text-sm text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-300"
+          className="inline-flex items-center gap-1 text-sm text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-300"
         >
-          ← Back to dashboard
+          ← Tillbaka till dashboard
         </Link>
         <h1 className="mt-2 text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
           Candidates
