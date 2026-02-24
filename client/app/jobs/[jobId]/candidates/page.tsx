@@ -359,13 +359,16 @@ export default function JobCandidatesPage() {
           <p className="mt-3 text-sm text-red-600 dark:text-red-400">{error}</p>
         )}
 
-        <div className="mt-6 flex items-center gap-3">
+        <div className="mt-6">
+          <label className="mb-2 block text-sm font-medium text-zinc-700 dark:text-zinc-300">
+            Search candidates
+          </label>
           <input
             type="search"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search by name…"
-            className="w-56 rounded-md border border-zinc-300 bg-white px-3 py-2 text-sm text-zinc-900 placeholder-zinc-500 focus:border-zinc-500 focus:outline-none focus:ring-1 focus:ring-zinc-500 dark:border-zinc-600 dark:bg-zinc-800 dark:text-zinc-100 dark:placeholder-zinc-400"
+            placeholder="Filter by name…"
+            className="w-full max-w-xs rounded-md border border-zinc-300 bg-white px-3 py-2 text-sm text-zinc-900 placeholder-zinc-500 focus:border-zinc-500 focus:outline-none focus:ring-1 focus:ring-zinc-500 dark:border-zinc-600 dark:bg-zinc-800 dark:text-zinc-100 dark:placeholder-zinc-400"
             aria-label="Search candidates by name"
           />
         </div>
