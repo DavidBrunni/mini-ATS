@@ -281,7 +281,7 @@ function CandidateDetailModal({
 
     const { data: { user } } = await supabase.auth.getUser();
     if (!user) {
-      setCommentError("Du måste vara inloggad för att lägga till kommentar.");
+      setCommentError("You must be logged in to add a comment.");
       return;
     }
 
@@ -297,7 +297,7 @@ function CandidateDetailModal({
     setNewComment("");
 
     if (error) {
-      setCommentError(error.message || "Kunde inte spara kommentaren.");
+      setCommentError(error.message || "Could not save the comment.");
       return;
     }
     if (inserted) {
@@ -307,12 +307,12 @@ function CandidateDetailModal({
   }
 
   async function handleDelete() {
-    if (!confirm("Är du säker? Kandidaten och alla kommentarer/aktivitet tas bort permanent.")) return;
+    if (!confirm("Are you sure? The candidate and all comments/activity will be permanently removed.")) return;
     setDeleteError(null);
     setDeleting(true);
     const { data: { session } } = await supabase.auth.getSession();
     if (!session?.access_token) {
-      setDeleteError("Du måste vara inloggad.");
+      setDeleteError("You must be logged in.");
       setDeleting(false);
       return;
     }
@@ -323,7 +323,7 @@ function CandidateDetailModal({
     const data = await res.json().catch(() => ({}));
     setDeleting(false);
     if (!res.ok) {
-      setDeleteError(data.error ?? "Kunde inte ta bort kandidaten.");
+      setDeleteError(data.error ?? "Could not delete the candidate.");
       return;
     }
     onDeleteCandidate?.(candidate.id);
@@ -368,7 +368,7 @@ function CandidateDetailModal({
             <>
               {loadError && (
                 <p className="mb-3 rounded bg-amber-50 px-3 py-2 text-sm text-amber-800 dark:bg-amber-900/30 dark:text-amber-200">
-                  {loadError} Kör SQL-migrationen i Supabase om tabellerna saknas (se supabase-comments-activity.sql).
+                  {loadError} Run the SQL migration in Supabase if the tables are missing (see supabase-comments-activity.sql).
                 </p>
               )}
               <section className="mb-4">
@@ -451,7 +451,7 @@ function CandidateDetailModal({
                     disabled={deleting}
                     className="rounded-md bg-red-600 px-3 py-2 text-sm font-medium text-white hover:bg-red-700 disabled:opacity-50 dark:bg-red-700 dark:hover:bg-red-800"
                   >
-                    {deleting ? "Tar bort…" : "Ta bort kandidat"}
+                    {deleting ? "Deleting…" : "Delete candidate"}
                   </button>
                 </section>
               )}
@@ -689,7 +689,7 @@ export default function JobCandidatesPage() {
     return (
       <div className="min-h-screen bg-zinc-50 p-6 dark:bg-zinc-950 sm:p-8">
         <Link href="/" className="text-sm text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-300">
-          ← Till startsidan
+          ← Back to home
         </Link>
         <p className="mt-4 text-red-600 dark:text-red-400">Missing job ID.</p>
       </div>
@@ -712,7 +712,7 @@ export default function JobCandidatesPage() {
           href="/dashboard"
           className="inline-flex items-center gap-1 text-sm text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-300"
         >
-          ← Tillbaka till dashboard
+          ← Back to dashboard
         </Link>
         <h1 className="mt-2 text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
           Candidates

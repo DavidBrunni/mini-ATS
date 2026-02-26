@@ -27,7 +27,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Snygg scrollbar under kanban-kolumnerna (horisontell) */
+/* Scrollbar under kanban columns (horizontal) */
 .kanban-scroll-x {
   scrollbar-width: thin;
   scrollbar-color: rgb(161 161 170) transparent;
@@ -63,7 +63,7 @@ body {
   background: rgb(63 63 70);
 }
 
-/* Vertikal scrollbar inuti varje kanban-kolumn */
+/* Vertical scrollbar inside each kanban column */
 .kanban-scroll-y {
   scrollbar-width: thin;
   scrollbar-color: rgb(161 161 170) transparent;

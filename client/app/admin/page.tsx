@@ -149,7 +149,7 @@ export default function AdminPage() {
             href="/"
             className="text-sm text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-300"
           >
-            ← Till startsidan
+            ← Back to home
           </Link>
           <p className="mt-4 text-red-600 dark:text-red-400">
             {accessError ?? "Access denied"}
@@ -167,7 +167,7 @@ export default function AdminPage() {
           href="/dashboard"
           className="inline-flex items-center gap-1 text-sm text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-300"
         >
-          ← Tillbaka till dashboard
+          ← Back to dashboard
         </Link>
         <h1 className="mt-2 text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
           Admin – Create user

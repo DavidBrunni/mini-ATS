@@ -196,7 +196,7 @@ export default function DashboardPage() {
           href="/"
           className="inline-flex items-center gap-1 text-sm text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-300"
         >
-          ← Startsida
+          ← Back to home
         </Link>
         <h1 className="mt-2 text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
           Dashboard
@@ -252,15 +252,15 @@ export default function DashboardPage() {
         {jobs.length > 0 && (
           <div className="mt-4">
             <label className="mb-1 block text-sm font-medium text-zinc-700 dark:text-zinc-300">
-              Filtrera jobb
+              Filter jobs
             </label>
             <input
               type="search"
               value={jobSearchQuery}
               onChange={(e) => setJobSearchQuery(e.target.value)}
-              placeholder="Sök på jobbtitel…"
+              placeholder="Search by job title…"
               className="w-full max-w-md rounded-md border border-zinc-300 bg-white px-3 py-2 text-sm text-zinc-900 placeholder-zinc-500 focus:border-zinc-500 focus:outline-none focus:ring-1 focus:ring-zinc-500 dark:border-zinc-600 dark:bg-zinc-800 dark:text-zinc-100 dark:placeholder-zinc-400"
-              aria-label="Filtrera jobb på titel"
+              aria-label="Filter jobs by title"
             />
           </div>
         )}
@@ -279,7 +279,7 @@ export default function DashboardPage() {
             if (filtered.length === 0 && jobs.length > 0) {
               return (
                 <li className="rounded-md border border-zinc-200 bg-white py-6 text-center text-sm text-zinc-500 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
-                  Inga jobb matchar sökningen.
+                  No jobs match your search.
                 </li>
               );
             }
@@ -294,7 +294,7 @@ export default function DashboardPage() {
                     {job.title}
                   </span>
                   <span className="text-sm text-zinc-500 dark:text-zinc-400">
-                    Kandidater →
+                    Candidates →
                   </span>
                 </div>
                 <span className="mt-1 block text-xs text-zinc-500 dark:text-zinc-400">

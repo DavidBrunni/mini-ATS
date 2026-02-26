@@ -47,7 +47,7 @@ export default function LoginPage() {
         href="/"
         className="text-sm text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-300"
       >
-        ← Till startsidan
+        ← Back to home
       </Link>
       <div className="w-full max-w-sm rounded-lg border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
         <h1 className="mb-6 text-xl font-semibold text-zinc-900 dark:text-zinc-100">
