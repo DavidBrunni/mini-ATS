@@ -934,7 +934,7 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
     module.exports = exports.default;
 } //# sourceMappingURL=link.js.map
 }),
-"[project]/node_modules/@supabase/functions-js/dist/module/types.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/client/node_modules/@supabase/functions-js/dist/module/types.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 /**
@@ -1001,7 +1001,7 @@ var FunctionRegion;
     FunctionRegion["UsWest2"] = "us-west-2";
 })(FunctionRegion || (FunctionRegion = {})); //# sourceMappingURL=types.js.map
 }),
-"[project]/node_modules/tslib/tslib.es6.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/client/node_modules/tslib/tslib.es6.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
@@ -1636,7 +1636,7 @@ const __TURBOPACK__default__export__ = {
     __rewriteRelativeImportExtension
 };
 }),
-"[project]/node_modules/@supabase/functions-js/dist/module/helper.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/client/node_modules/@supabase/functions-js/dist/module/helper.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
@@ -1650,16 +1650,16 @@ const resolveFetch = (customFetch)=>{
     return (...args)=>fetch(...args);
 }; //# sourceMappingURL=helper.js.map
 }),
-"[project]/node_modules/@supabase/functions-js/dist/module/FunctionsClient.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/client/node_modules/@supabase/functions-js/dist/module/FunctionsClient.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
     "FunctionsClient",
     ()=>FunctionsClient
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/tslib/tslib.es6.mjs [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$helper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/functions-js/dist/module/helper.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$types$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/functions-js/dist/module/types.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/tslib/tslib.es6.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$helper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/functions-js/dist/module/helper.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$types$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/functions-js/dist/module/types.js [app-client] (ecmascript)");
 ;
 ;
 ;
@@ -1676,11 +1676,11 @@ class FunctionsClient {
      *   region: FunctionRegion.UsEast1,
      * })
      * ```
-     */ constructor(url, { headers = {}, customFetch, region = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$types$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FunctionRegion"].Any } = {}){
+     */ constructor(url, { headers = {}, customFetch, region = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$types$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FunctionRegion"].Any } = {}){
         this.url = url;
         this.headers = headers;
         this.region = region;
-        this.fetch = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$helper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveFetch"])(customFetch);
+        this.fetch = (0, __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$helper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveFetch"])(customFetch);
     }
     /**
      * Updates the authorization header
@@ -1703,7 +1703,7 @@ class FunctionsClient {
      * })
      * ```
      */ invoke(functionName_1) {
-        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["__awaiter"])(this, arguments, void 0, function*(functionName, options = {}) {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["__awaiter"])(this, arguments, void 0, function*(functionName, options = {}) {
             var _a;
             let timeoutId;
             let timeoutController;
@@ -1771,14 +1771,14 @@ class FunctionsClient {
                     body,
                     signal: effectiveSignal
                 }).catch((fetchError)=>{
-                    throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$types$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FunctionsFetchError"](fetchError);
+                    throw new __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$types$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FunctionsFetchError"](fetchError);
                 });
                 const isRelayError = response.headers.get('x-relay-error');
                 if (isRelayError && isRelayError === 'true') {
-                    throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$types$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FunctionsRelayError"](response);
+                    throw new __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$types$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FunctionsRelayError"](response);
                 }
                 if (!response.ok) {
-                    throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$types$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FunctionsHttpError"](response);
+                    throw new __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$types$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FunctionsHttpError"](response);
                 }
                 let responseType = ((_a = response.headers.get('Content-Type')) !== null && _a !== void 0 ? _a : 'text/plain').split(';')[0].trim();
                 let data;
@@ -1803,7 +1803,7 @@ class FunctionsClient {
                 return {
                     data: null,
                     error,
-                    response: error instanceof __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$types$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FunctionsHttpError"] || error instanceof __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$types$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FunctionsRelayError"] ? error.context : undefined
+                    response: error instanceof __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$types$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FunctionsHttpError"] || error instanceof __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$types$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FunctionsRelayError"] ? error.context : undefined
                 };
             } finally{
                 // Clear the timeout if it was set
@@ -1815,7 +1815,7 @@ class FunctionsClient {
     }
 } //# sourceMappingURL=FunctionsClient.js.map
 }),
-"[project]/node_modules/@supabase/postgrest-js/dist/index.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/client/node_modules/@supabase/postgrest-js/dist/index.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
@@ -3143,7 +3143,7 @@ var src_default = {
 ;
  //# sourceMappingURL=index.mjs.map
 }),
-"[project]/node_modules/@supabase/realtime-js/dist/module/lib/websocket-factory.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/client/node_modules/@supabase/realtime-js/dist/module/lib/websocket-factory.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 /**
@@ -3281,7 +3281,7 @@ class WebSocketFactory {
 const __TURBOPACK__default__export__ = WebSocketFactory;
  //# sourceMappingURL=websocket-factory.js.map
 }),
-"[project]/node_modules/@supabase/realtime-js/dist/module/lib/version.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/client/node_modules/@supabase/realtime-js/dist/module/lib/version.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 // Generated automatically during releases by scripts/update-version-files.ts
@@ -3294,9 +3294,9 @@ __turbopack_context__.s([
     "version",
     ()=>version
 ]);
-const version = '2.97.0'; //# sourceMappingURL=version.js.map
+const version = '2.98.0'; //# sourceMappingURL=version.js.map
 }),
-"[project]/node_modules/@supabase/realtime-js/dist/module/lib/constants.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/client/node_modules/@supabase/realtime-js/dist/module/lib/constants.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
@@ -3327,13 +3327,13 @@ __turbopack_context__.s([
     "WS_CLOSE_NORMAL",
     ()=>WS_CLOSE_NORMAL
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$version$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/lib/version.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$version$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/lib/version.js [app-client] (ecmascript)");
 ;
-const DEFAULT_VERSION = `realtime-js/${__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$version$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["version"]}`;
+const DEFAULT_VERSION = `realtime-js/${__TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$version$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["version"]}`;
 const VSN_1_0_0 = '1.0.0';
 const VSN_2_0_0 = '2.0.0';
 const DEFAULT_VSN = VSN_2_0_0;
-const VERSION = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$version$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["version"];
+const VERSION = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$version$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["version"];
 const DEFAULT_TIMEOUT = 10000;
 const WS_CLOSE_NORMAL = 1000;
 const MAX_PUSH_BUFFER_SIZE = 100;
@@ -3373,7 +3373,7 @@ var CONNECTION_STATE;
     CONNECTION_STATE["Closed"] = "closed";
 })(CONNECTION_STATE || (CONNECTION_STATE = {})); //# sourceMappingURL=constants.js.map
 }),
-"[project]/node_modules/@supabase/realtime-js/dist/module/lib/serializer.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/client/node_modules/@supabase/realtime-js/dist/module/lib/serializer.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
@@ -3543,7 +3543,7 @@ class Serializer {
     }
 } //# sourceMappingURL=serializer.js.map
 }),
-"[project]/node_modules/@supabase/realtime-js/dist/module/lib/timer.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/client/node_modules/@supabase/realtime-js/dist/module/lib/timer.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 /**
@@ -3585,7 +3585,7 @@ class Timer {
     }
 } //# sourceMappingURL=timer.js.map
 }),
-"[project]/node_modules/@supabase/realtime-js/dist/module/lib/transformers.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/client/node_modules/@supabase/realtime-js/dist/module/lib/transformers.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 /**
@@ -3778,14 +3778,14 @@ const httpEndpointURL = (socketUrl)=>{
     return wsUrl.href;
 }; //# sourceMappingURL=transformers.js.map
 }),
-"[project]/node_modules/@supabase/realtime-js/dist/module/lib/push.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/client/node_modules/@supabase/realtime-js/dist/module/lib/push.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
     "default",
     ()=>Push
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/lib/constants.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/lib/constants.js [app-client] (ecmascript)");
 ;
 class Push {
     /**
@@ -3795,7 +3795,7 @@ class Push {
      * @param event The event, for example `"phx_join"`
      * @param payload The payload, for example `{user_id: 123}`
      * @param timeout The push timeout in milliseconds
-     */ constructor(channel, event, payload = {}, timeout = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DEFAULT_TIMEOUT"]){
+     */ constructor(channel, event, payload = {}, timeout = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DEFAULT_TIMEOUT"]){
         this.channel = channel;
         this.event = event;
         this.payload = payload;
@@ -3889,7 +3889,7 @@ class Push {
     }
 } //# sourceMappingURL=push.js.map
 }),
-"[project]/node_modules/@supabase/realtime-js/dist/module/RealtimePresence.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/client/node_modules/@supabase/realtime-js/dist/module/RealtimePresence.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 /*
@@ -4120,7 +4120,7 @@ class RealtimePresence {
     }
 } //# sourceMappingURL=RealtimePresence.js.map
 }),
-"[project]/node_modules/@supabase/realtime-js/dist/module/RealtimeChannel.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/client/node_modules/@supabase/realtime-js/dist/module/RealtimeChannel.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
@@ -4135,11 +4135,11 @@ __turbopack_context__.s([
     "default",
     ()=>RealtimeChannel
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/lib/constants.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$push$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/lib/push.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$timer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/lib/timer.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimePresence$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/RealtimePresence.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$transformers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/lib/transformers.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/lib/constants.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$push$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/lib/push.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$timer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/lib/timer.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimePresence$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/RealtimePresence.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$transformers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/lib/transformers.js [app-client] (ecmascript)");
 ;
 ;
 ;
@@ -4167,7 +4167,7 @@ var REALTIME_SUBSCRIBE_STATES;
     REALTIME_SUBSCRIBE_STATES["CLOSED"] = "CLOSED";
     REALTIME_SUBSCRIBE_STATES["CHANNEL_ERROR"] = "CHANNEL_ERROR";
 })(REALTIME_SUBSCRIBE_STATES || (REALTIME_SUBSCRIBE_STATES = {}));
-const REALTIME_CHANNEL_STATES = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"];
+const REALTIME_CHANNEL_STATES = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"];
 class RealtimeChannel {
     /**
      * Creates a channel that can broadcast messages, sync presence, and listen to Postgres changes.
@@ -4192,7 +4192,7 @@ class RealtimeChannel {
         this.params = params;
         this.socket = socket;
         this.bindings = {};
-        this.state = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].closed;
+        this.state = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].closed;
         this.joinedOnce = false;
         this.pushBuffer = [];
         this.subTopic = topic.replace(/^realtime:/i, '');
@@ -4208,10 +4208,10 @@ class RealtimeChannel {
             private: false
         }, params.config);
         this.timeout = this.socket.timeout;
-        this.joinPush = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$push$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](this, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_EVENTS"].join, this.params, this.timeout);
-        this.rejoinTimer = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$timer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](()=>this._rejoinUntilConnected(), this.socket.reconnectAfterMs);
+        this.joinPush = new __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$push$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](this, __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_EVENTS"].join, this.params, this.timeout);
+        this.rejoinTimer = new __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$timer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](()=>this._rejoinUntilConnected(), this.socket.reconnectAfterMs);
         this.joinPush.receive('ok', ()=>{
-            this.state = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].joined;
+            this.state = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].joined;
             this.rejoinTimer.reset();
             this.pushBuffer.forEach((pushEvent)=>pushEvent.send());
             this.pushBuffer = [];
@@ -4219,7 +4219,7 @@ class RealtimeChannel {
         this._onClose(()=>{
             this.rejoinTimer.reset();
             this.socket.log('channel', `close ${this.topic} ${this._joinRef()}`);
-            this.state = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].closed;
+            this.state = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].closed;
             this.socket._remove(this);
         });
         this._onError((reason)=>{
@@ -4227,7 +4227,7 @@ class RealtimeChannel {
                 return;
             }
             this.socket.log('channel', `error ${this.topic}`, reason);
-            this.state = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].errored;
+            this.state = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].errored;
             this.rejoinTimer.scheduleTimeout();
         });
         this.joinPush.receive('timeout', ()=>{
@@ -4235,7 +4235,7 @@ class RealtimeChannel {
                 return;
             }
             this.socket.log('channel', `timeout ${this.topic}`, this.joinPush.timeout);
-            this.state = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].errored;
+            this.state = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].errored;
             this.rejoinTimer.scheduleTimeout();
         });
         this.joinPush.receive('error', (reason)=>{
@@ -4243,14 +4243,14 @@ class RealtimeChannel {
                 return;
             }
             this.socket.log('channel', `error ${this.topic}`, reason);
-            this.state = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].errored;
+            this.state = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].errored;
             this.rejoinTimer.scheduleTimeout();
         });
-        this._on(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_EVENTS"].reply, {}, (payload, ref)=>{
+        this._on(__TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_EVENTS"].reply, {}, (payload, ref)=>{
             this._trigger(this._replyEventName(ref), payload);
         });
-        this.presence = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimePresence$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](this);
-        this.broadcastEndpointURL = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$transformers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["httpEndpointURL"])(this.socket.endPoint);
+        this.presence = new __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimePresence$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](this);
+        this.broadcastEndpointURL = (0, __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$transformers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["httpEndpointURL"])(this.socket.endPoint);
         this.private = this.params.config.private || false;
         if (!this.private && ((_b = (_a = this.params.config) === null || _a === void 0 ? void 0 : _a.broadcast) === null || _b === void 0 ? void 0 : _b.replay)) {
             throw `tried to use replay on public channel '${this.topic}'. It must be a private channel.`;
@@ -4261,7 +4261,7 @@ class RealtimeChannel {
         if (!this.socket.isConnected()) {
             this.socket.connect();
         }
-        if (this.state == __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].closed) {
+        if (this.state == __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].closed) {
             const { config: { broadcast, presence, private: isPrivate } } = this.params;
             const postgres_changes = (_b = (_a = this.bindings.postgres_changes) === null || _a === void 0 ? void 0 : _a.map((r)=>r.filter)) !== null && _b !== void 0 ? _b : [];
             const presence_enabled = !!this.bindings[REALTIME_LISTEN_TYPES.PRESENCE] && this.bindings[REALTIME_LISTEN_TYPES.PRESENCE].length > 0 || ((_c = this.params.config.presence) === null || _c === void 0 ? void 0 : _c.enabled) === true;
@@ -4307,7 +4307,7 @@ class RealtimeChannel {
                             }));
                         } else {
                             this.unsubscribe();
-                            this.state = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].errored;
+                            this.state = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].errored;
                             callback === null || callback === void 0 ? void 0 : callback(REALTIME_SUBSCRIBE_STATES.CHANNEL_ERROR, new Error('mismatch between server and client bindings for postgres changes'));
                             return;
                         }
@@ -4317,7 +4317,7 @@ class RealtimeChannel {
                     return;
                 }
             }).receive('error', (error)=>{
-                this.state = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].errored;
+                this.state = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].errored;
                 callback === null || callback === void 0 ? void 0 : callback(REALTIME_SUBSCRIBE_STATES.CHANNEL_ERROR, new Error(JSON.stringify(Object.values(error).join(', ') || 'error')));
                 return;
             }).receive('timeout', ()=>{
@@ -4354,7 +4354,7 @@ class RealtimeChannel {
         }, opts);
     }
     on(type, filter, callback) {
-        if (this.state === __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].joined && type === REALTIME_LISTEN_TYPES.PRESENCE) {
+        if (this.state === __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].joined && type === REALTIME_LISTEN_TYPES.PRESENCE) {
             this.socket.log('channel', `resubscribe to ${this.topic} due to change in presence callbacks on joined channel`);
             this.unsubscribe().then(async ()=>await this.subscribe());
         }
@@ -4482,15 +4482,15 @@ class RealtimeChannel {
      * To receive leave acknowledgements, use the a `receive` hook to bind to the server ack, ie:
      * channel.unsubscribe().receive("ok", () => alert("left!") )
      */ unsubscribe(timeout = this.timeout) {
-        this.state = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].leaving;
+        this.state = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].leaving;
         const onClose = ()=>{
             this.socket.log('channel', `leave ${this.topic}`);
-            this._trigger(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_EVENTS"].close, 'leave', this._joinRef());
+            this._trigger(__TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_EVENTS"].close, 'leave', this._joinRef());
         };
         this.joinPush.destroy();
         let leavePush = null;
         return new Promise((resolve)=>{
-            leavePush = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$push$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](this, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_EVENTS"].leave, {}, timeout);
+            leavePush = new __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$push$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](this, __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_EVENTS"].leave, {}, timeout);
             leavePush.receive('ok', ()=>{
                 onClose();
                 resolve('ok');
@@ -4517,7 +4517,7 @@ class RealtimeChannel {
         this.pushBuffer = [];
         this.rejoinTimer.reset();
         this.joinPush.destroy();
-        this.state = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].closed;
+        this.state = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].closed;
         this.bindings = {};
     }
     /** @internal */ async _fetchWithTimeout(url, options, timeout) {
@@ -4533,7 +4533,7 @@ class RealtimeChannel {
         if (!this.joinedOnce) {
             throw `tried to push '${event}' to '${this.topic}' before joining. Use channel.subscribe() before pushing events`;
         }
-        let pushEvent = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$push$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](this, event, payload, timeout);
+        let pushEvent = new __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$push$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](this, event, payload, timeout);
         if (this._canPush()) {
             pushEvent.send();
         } else {
@@ -4545,7 +4545,7 @@ class RealtimeChannel {
         pushEvent.startTimeout();
         this.pushBuffer.push(pushEvent);
         // Enforce buffer size limit
-        if (this.pushBuffer.length > __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MAX_PUSH_BUFFER_SIZE"]) {
+        if (this.pushBuffer.length > __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MAX_PUSH_BUFFER_SIZE"]) {
             const removedPush = this.pushBuffer.shift();
             if (removedPush) {
                 removedPush.destroy();
@@ -4572,7 +4572,7 @@ class RealtimeChannel {
     /** @internal */ _trigger(type, payload, ref) {
         var _a, _b;
         const typeLower = type.toLocaleLowerCase();
-        const { close, error, leave, join } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_EVENTS"];
+        const { close, error, leave, join } = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_EVENTS"];
         const events = [
             close,
             error,
@@ -4634,16 +4634,16 @@ class RealtimeChannel {
         }
     }
     /** @internal */ _isClosed() {
-        return this.state === __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].closed;
+        return this.state === __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].closed;
     }
     /** @internal */ _isJoined() {
-        return this.state === __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].joined;
+        return this.state === __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].joined;
     }
     /** @internal */ _isJoining() {
-        return this.state === __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].joining;
+        return this.state === __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].joining;
     }
     /** @internal */ _isLeaving() {
-        return this.state === __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].leaving;
+        return this.state === __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].leaving;
     }
     /** @internal */ _replyEventName(ref) {
         return `chan_reply_${ref}`;
@@ -4705,14 +4705,14 @@ class RealtimeChannel {
      *
      * @internal
      */ _onClose(callback) {
-        this._on(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_EVENTS"].close, {}, callback);
+        this._on(__TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_EVENTS"].close, {}, callback);
     }
     /**
      * Registers a callback that will be executed when the channel encounteres an error.
      *
      * @internal
      */ _onError(callback) {
-        this._on(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_EVENTS"].error, {}, (reason)=>callback(reason));
+        this._on(__TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_EVENTS"].error, {}, (reason)=>callback(reason));
     }
     /**
      * Returns `true` if the socket is connected and the channel has been joined.
@@ -4726,7 +4726,7 @@ class RealtimeChannel {
             return;
         }
         this.socket._leaveOpenTopic(this.topic);
-        this.state = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].joining;
+        this.state = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_STATES"].joining;
         this.joinPush.resend(timeout);
     }
     /** @internal */ _getPayloadRecords(payload) {
@@ -4735,28 +4735,28 @@ class RealtimeChannel {
             old: {}
         };
         if (payload.type === 'INSERT' || payload.type === 'UPDATE') {
-            records.new = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$transformers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["convertChangeData"](payload.columns, payload.record);
+            records.new = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$transformers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["convertChangeData"](payload.columns, payload.record);
         }
         if (payload.type === 'UPDATE' || payload.type === 'DELETE') {
-            records.old = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$transformers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["convertChangeData"](payload.columns, payload.old_record);
+            records.old = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$transformers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["convertChangeData"](payload.columns, payload.old_record);
         }
         return records;
     }
 } //# sourceMappingURL=RealtimeChannel.js.map
 }),
-"[project]/node_modules/@supabase/realtime-js/dist/module/RealtimeClient.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/client/node_modules/@supabase/realtime-js/dist/module/RealtimeClient.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
     "default",
     ()=>RealtimeClient
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$websocket$2d$factory$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/lib/websocket-factory.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/lib/constants.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$serializer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/lib/serializer.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$timer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/lib/timer.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$transformers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/lib/transformers.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimeChannel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/RealtimeChannel.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$websocket$2d$factory$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/lib/websocket-factory.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/lib/constants.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$serializer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/lib/serializer.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$timer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/lib/timer.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$transformers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/lib/transformers.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimeChannel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/RealtimeChannel.js [app-client] (ecmascript)");
 ;
 ;
 ;
@@ -4822,7 +4822,7 @@ class RealtimeClient {
         this.httpEndpoint = '';
         /** @deprecated headers cannot be set on websocket connections */ this.headers = {};
         this.params = {};
-        this.timeout = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DEFAULT_TIMEOUT"];
+        this.timeout = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DEFAULT_TIMEOUT"];
         this.transport = null;
         this.heartbeatIntervalMs = CONNECTION_TIMEOUTS.HEARTBEAT_INTERVAL;
         this.heartbeatTimer = undefined;
@@ -4830,11 +4830,11 @@ class RealtimeClient {
         this.heartbeatCallback = noop;
         this.ref = 0;
         this.reconnectTimer = null;
-        this.vsn = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DEFAULT_VSN"];
+        this.vsn = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DEFAULT_VSN"];
         this.logger = noop;
         this.conn = null;
         this.sendBuffer = [];
-        this.serializer = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$serializer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]();
+        this.serializer = new __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$serializer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]();
         this.stateChangeCallbacks = {
             open: [],
             close: [],
@@ -4862,8 +4862,8 @@ class RealtimeClient {
         }
         this.apiKey = options.params.apikey;
         // Initialize endpoint URLs
-        this.endPoint = `${endPoint}/${__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TRANSPORTS"].websocket}`;
-        this.httpEndpoint = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$transformers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["httpEndpointURL"])(endPoint);
+        this.endPoint = `${endPoint}/${__TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TRANSPORTS"].websocket}`;
+        this.httpEndpoint = (0, __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$transformers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["httpEndpointURL"])(endPoint);
         this._initializeOptions(options);
         this._setupReconnectionTimer();
         this.fetch = this._resolveFetch(options === null || options === void 0 ? void 0 : options.fetch);
@@ -4889,7 +4889,7 @@ class RealtimeClient {
         } else {
             // Try to use native WebSocket
             try {
-                this.conn = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$websocket$2d$factory$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].createWebSocket(this.endpointURL());
+                this.conn = __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$websocket$2d$factory$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].createWebSocket(this.endpointURL());
             } catch (error) {
                 this._setConnectionState('disconnected');
                 const errorMessage = error.message;
@@ -4976,20 +4976,20 @@ class RealtimeClient {
      * Returns the current state of the socket.
      */ connectionState() {
         switch(this.conn && this.conn.readyState){
-            case __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SOCKET_STATES"].connecting:
-                return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTION_STATE"].Connecting;
-            case __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SOCKET_STATES"].open:
-                return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTION_STATE"].Open;
-            case __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SOCKET_STATES"].closing:
-                return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTION_STATE"].Closing;
+            case __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SOCKET_STATES"].connecting:
+                return __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTION_STATE"].Connecting;
+            case __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SOCKET_STATES"].open:
+                return __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTION_STATE"].Open;
+            case __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SOCKET_STATES"].closing:
+                return __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTION_STATE"].Closing;
             default:
-                return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTION_STATE"].Closed;
+                return __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTION_STATE"].Closed;
         }
     }
     /**
      * Returns `true` is the connection is open.
      */ isConnected() {
-        return this.connectionState() === __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTION_STATE"].Open;
+        return this.connectionState() === __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CONNECTION_STATE"].Open;
     }
     /**
      * Returns `true` if the connection is currently connecting.
@@ -5013,7 +5013,7 @@ class RealtimeClient {
         const realtimeTopic = `realtime:${topic}`;
         const exists = this.getChannels().find((c)=>c.topic === realtimeTopic);
         if (!exists) {
-            const chan = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimeChannel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](`realtime:${topic}`, params, this);
+            const chan = new __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimeChannel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](`realtime:${topic}`, params, this);
             this.channels.push(chan);
             return chan;
         } else {
@@ -5097,7 +5097,7 @@ class RealtimeClient {
             }
             // Force reconnection after heartbeat timeout
             this._wasManualDisconnect = false;
-            (_a = this.conn) === null || _a === void 0 ? void 0 : _a.close(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["WS_CLOSE_NORMAL"], 'heartbeat timeout');
+            (_a = this.conn) === null || _a === void 0 ? void 0 : _a.close(__TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["WS_CLOSE_NORMAL"], 'heartbeat timeout');
             setTimeout(()=>{
                 var _a;
                 if (!this.isConnected()) {
@@ -5225,7 +5225,7 @@ class RealtimeClient {
         this.conn.onerror = (error)=>this._onConnError(error);
         this.conn.onmessage = (event)=>this._onConnMessage(event);
         this.conn.onclose = (event)=>this._onConnClose(event);
-        if (this.conn.readyState === __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SOCKET_STATES"].open) {
+        if (this.conn.readyState === __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SOCKET_STATES"].open) {
             this._onConnOpen();
         }
     }
@@ -5234,7 +5234,7 @@ class RealtimeClient {
      * @internal
      */ _teardownConnection() {
         if (this.conn) {
-            if (this.conn.readyState === __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SOCKET_STATES"].open || this.conn.readyState === __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SOCKET_STATES"].connecting) {
+            if (this.conn.readyState === __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SOCKET_STATES"].open || this.conn.readyState === __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SOCKET_STATES"].connecting) {
                 try {
                     this.conn.close();
                 } catch (e) {
@@ -5258,6 +5258,36 @@ class RealtimeClient {
         // This ensures channel join messages include the correct access token
         const authPromise = this._authPromise || (this.accessToken && !this.accessTokenValue ? this.setAuth() : Promise.resolve());
         authPromise.then(()=>{
+            // When subscribe() is called before the accessToken callback has
+            // resolved (common on React Native / Expo where token storage is
+            // async), the phx_join payload captured at subscribe()-time will
+            // have no access_token.  By this point auth has settled and
+            // this.accessTokenValue holds the real JWT.
+            //
+            // The stale join messages sitting in sendBuffer captured the old
+            // (token-less) payload in a closure, so we cannot simply flush
+            // them.  Instead we:
+            //   1. Patch each channel's joinPush payload with the real token
+            //   2. Drop the stale buffered messages
+            //   3. Re-send the join for any channel still in "joining" state
+            //
+            // On browsers this is a harmless no-op: accessTokenValue was
+            // already set synchronously before subscribe() ran, so the join
+            // payload already had the correct token.
+            if (this.accessTokenValue) {
+                this.channels.forEach((channel)=>{
+                    channel.updateJoinPayload({
+                        access_token: this.accessTokenValue
+                    });
+                });
+                this.sendBuffer = [];
+                this.channels.forEach((channel)=>{
+                    if (channel._isJoining()) {
+                        channel.joinPush.sent = false;
+                        channel.joinPush.send();
+                    }
+                });
+            }
             this.flushSendBuffer();
         }).catch((e)=>{
             this.log('error', 'error waiting for auth on connect', e);
@@ -5334,7 +5364,7 @@ class RealtimeClient {
         }
     }
     /** @internal */ _triggerChanError() {
-        this.channels.forEach((channel)=>channel._trigger(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_EVENTS"].error));
+        this.channels.forEach((channel)=>channel._trigger(__TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_EVENTS"].error));
     }
     /** @internal */ _appendParams(url, params) {
         if (Object.keys(params).length === 0) {
@@ -5403,11 +5433,11 @@ class RealtimeClient {
             this.channels.forEach((channel)=>{
                 const payload = {
                     access_token: tokenToSend,
-                    version: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DEFAULT_VERSION"]
+                    version: __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DEFAULT_VERSION"]
                 };
                 tokenToSend && channel.updateJoinPayload(payload);
                 if (channel.joinedOnce && channel._isJoined()) {
-                    channel._push(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_EVENTS"].access_token, {
+                    channel._push(__TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CHANNEL_EVENTS"].access_token, {
                         access_token: tokenToSend
                     });
                 }
@@ -5453,7 +5483,7 @@ class RealtimeClient {
      * Setup reconnection timer with proper configuration
      * @internal
      */ _setupReconnectionTimer() {
-        this.reconnectTimer = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$timer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](async ()=>{
+        this.reconnectTimer = new __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$timer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](async ()=>{
             setTimeout(async ()=>{
                 await this._waitForAuthIfNeeded();
                 if (!this.isConnected()) {
@@ -5469,12 +5499,12 @@ class RealtimeClient {
         var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m;
         // Set defaults
         this.transport = (_a = options === null || options === void 0 ? void 0 : options.transport) !== null && _a !== void 0 ? _a : null;
-        this.timeout = (_b = options === null || options === void 0 ? void 0 : options.timeout) !== null && _b !== void 0 ? _b : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DEFAULT_TIMEOUT"];
+        this.timeout = (_b = options === null || options === void 0 ? void 0 : options.timeout) !== null && _b !== void 0 ? _b : __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DEFAULT_TIMEOUT"];
         this.heartbeatIntervalMs = (_c = options === null || options === void 0 ? void 0 : options.heartbeatIntervalMs) !== null && _c !== void 0 ? _c : CONNECTION_TIMEOUTS.HEARTBEAT_INTERVAL;
         this.worker = (_d = options === null || options === void 0 ? void 0 : options.worker) !== null && _d !== void 0 ? _d : false;
         this.accessToken = (_e = options === null || options === void 0 ? void 0 : options.accessToken) !== null && _e !== void 0 ? _e : null;
         this.heartbeatCallback = (_f = options === null || options === void 0 ? void 0 : options.heartbeatCallback) !== null && _f !== void 0 ? _f : noop;
-        this.vsn = (_g = options === null || options === void 0 ? void 0 : options.vsn) !== null && _g !== void 0 ? _g : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DEFAULT_VSN"];
+        this.vsn = (_g = options === null || options === void 0 ? void 0 : options.vsn) !== null && _g !== void 0 ? _g : __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DEFAULT_VSN"];
         // Handle special cases
         if (options === null || options === void 0 ? void 0 : options.params) this.params = options.params;
         if (options === null || options === void 0 ? void 0 : options.logger) this.logger = options.logger;
@@ -5489,7 +5519,7 @@ class RealtimeClient {
             return RECONNECT_INTERVALS[tries - 1] || DEFAULT_RECONNECT_FALLBACK;
         };
         switch(this.vsn){
-            case __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["VSN_1_0_0"]:
+            case __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["VSN_1_0_0"]:
                 this.encode = (_j = options === null || options === void 0 ? void 0 : options.encode) !== null && _j !== void 0 ? _j : (payload, callback)=>{
                     return callback(JSON.stringify(payload));
                 };
@@ -5497,7 +5527,7 @@ class RealtimeClient {
                     return callback(JSON.parse(payload));
                 };
                 break;
-            case __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["VSN_2_0_0"]:
+            case __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["VSN_2_0_0"]:
                 this.encode = (_l = options === null || options === void 0 ? void 0 : options.encode) !== null && _l !== void 0 ? _l : this.serializer.encode.bind(this.serializer);
                 this.decode = (_m = options === null || options === void 0 ? void 0 : options.decode) !== null && _m !== void 0 ? _m : this.serializer.decode.bind(this.serializer);
                 break;
@@ -5514,14 +5544,14 @@ class RealtimeClient {
     }
 } //# sourceMappingURL=RealtimeClient.js.map
 }),
-"[project]/node_modules/@supabase/realtime-js/dist/module/index.js [app-client] (ecmascript) <locals>", ((__turbopack_context__) => {
+"[project]/client/node_modules/@supabase/realtime-js/dist/module/index.js [app-client] (ecmascript) <locals>", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimeClient$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/RealtimeClient.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimeChannel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/RealtimeChannel.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimePresence$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/RealtimePresence.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$websocket$2d$factory$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/lib/websocket-factory.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimeClient$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/RealtimeClient.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimeChannel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/RealtimeChannel.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimePresence$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/RealtimePresence.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$lib$2f$websocket$2d$factory$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/lib/websocket-factory.js [app-client] (ecmascript)");
 ;
 ;
 ;
@@ -5529,14 +5559,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2
 ;
  //# sourceMappingURL=index.js.map
 }),
-"[project]/node_modules/@supabase/realtime-js/dist/module/RealtimeClient.js [app-client] (ecmascript) <export default as RealtimeClient>", ((__turbopack_context__) => {
+"[project]/client/node_modules/@supabase/realtime-js/dist/module/RealtimeClient.js [app-client] (ecmascript) <export default as RealtimeClient>", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
     "RealtimeClient",
-    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimeClient$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimeClient$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimeClient$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/RealtimeClient.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimeClient$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/RealtimeClient.js [app-client] (ecmascript)");
 }),
 "[project]/client/node_modules/next/dist/compiled/buffer/index.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 
@@ -7063,7 +7093,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2
     module.exports = t;
 })();
 }),
-"[project]/node_modules/iceberg-js/dist/index.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/client/node_modules/iceberg-js/dist/index.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
@@ -7662,7 +7692,7 @@ function getCurrentSchema(metadata) {
  //# sourceMappingURL=index.mjs.map
  //# sourceMappingURL=index.mjs.map
 }),
-"[project]/node_modules/@supabase/storage-js/dist/index.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/client/node_modules/@supabase/storage-js/dist/index.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
@@ -7702,7 +7732,7 @@ __turbopack_context__.s([
     ()=>isStorageVectorsError
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$buffer$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/client/node_modules/next/dist/compiled/buffer/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$iceberg$2d$js$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/iceberg-js/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f$iceberg$2d$js$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/iceberg-js/dist/index.mjs [app-client] (ecmascript)");
 ;
 //#region src/lib/common/errors.ts
 /**
@@ -9000,7 +9030,7 @@ var StorageFileApi = class extends BaseApiClient {
 };
 //#endregion
 //#region src/lib/version.ts
-const version = "2.97.0";
+const version = "2.98.0";
 //#endregion
 //#region src/lib/constants.ts
 const DEFAULT_HEADERS = {
@@ -9568,7 +9598,7 @@ var StorageBucketApi = class extends BaseApiClient {
 	*/ from(bucketName) {
         var _this4 = this;
         if (!isValidBucketName(bucketName)) throw new StorageError("Invalid bucket name: File, folder, and bucket names must follow AWS object key naming guidelines and should avoid the use of any other characters.");
-        const catalog = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$iceberg$2d$js$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IcebergRestCatalog"]({
+        const catalog = new __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f$iceberg$2d$js$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IcebergRestCatalog"]({
             baseUrl: this.url,
             catalogName: bucketName,
             auth: {
@@ -10352,6 +10382,641 @@ var StorageClient = class extends StorageBucketApi {
 };
 ;
  //# sourceMappingURL=index.mjs.map
+}),
+"[project]/node_modules/tslib/tslib.es6.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "__addDisposableResource",
+    ()=>__addDisposableResource,
+    "__assign",
+    ()=>__assign,
+    "__asyncDelegator",
+    ()=>__asyncDelegator,
+    "__asyncGenerator",
+    ()=>__asyncGenerator,
+    "__asyncValues",
+    ()=>__asyncValues,
+    "__await",
+    ()=>__await,
+    "__awaiter",
+    ()=>__awaiter,
+    "__classPrivateFieldGet",
+    ()=>__classPrivateFieldGet,
+    "__classPrivateFieldIn",
+    ()=>__classPrivateFieldIn,
+    "__classPrivateFieldSet",
+    ()=>__classPrivateFieldSet,
+    "__createBinding",
+    ()=>__createBinding,
+    "__decorate",
+    ()=>__decorate,
+    "__disposeResources",
+    ()=>__disposeResources,
+    "__esDecorate",
+    ()=>__esDecorate,
+    "__exportStar",
+    ()=>__exportStar,
+    "__extends",
+    ()=>__extends,
+    "__generator",
+    ()=>__generator,
+    "__importDefault",
+    ()=>__importDefault,
+    "__importStar",
+    ()=>__importStar,
+    "__makeTemplateObject",
+    ()=>__makeTemplateObject,
+    "__metadata",
+    ()=>__metadata,
+    "__param",
+    ()=>__param,
+    "__propKey",
+    ()=>__propKey,
+    "__read",
+    ()=>__read,
+    "__rest",
+    ()=>__rest,
+    "__rewriteRelativeImportExtension",
+    ()=>__rewriteRelativeImportExtension,
+    "__runInitializers",
+    ()=>__runInitializers,
+    "__setFunctionName",
+    ()=>__setFunctionName,
+    "__spread",
+    ()=>__spread,
+    "__spreadArray",
+    ()=>__spreadArray,
+    "__spreadArrays",
+    ()=>__spreadArrays,
+    "__values",
+    ()=>__values,
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+/******************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */ /* global Reflect, Promise, SuppressedError, Symbol, Iterator */ var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf || ({
+        __proto__: []
+    }) instanceof Array && function(d, b) {
+        d.__proto__ = b;
+    } || function(d, b) {
+        for(var p in b)if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p];
+    };
+    return extendStatics(d, b);
+};
+function __extends(d, b) {
+    if (typeof b !== "function" && b !== null) throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+    extendStatics(d, b);
+    function __() {
+        this.constructor = d;
+    }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for(var s, i = 1, n = arguments.length; i < n; i++){
+            s = arguments[i];
+            for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+function __rest(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++){
+        if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+}
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for(var i = decorators.length - 1; i >= 0; i--)if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+function __param(paramIndex, decorator) {
+    return function(target, key) {
+        decorator(target, key, paramIndex);
+    };
+}
+function __esDecorate(ctor, descriptorIn, decorators, contextIn, initializers, extraInitializers) {
+    function accept(f) {
+        if (f !== void 0 && typeof f !== "function") throw new TypeError("Function expected");
+        return f;
+    }
+    var kind = contextIn.kind, key = kind === "getter" ? "get" : kind === "setter" ? "set" : "value";
+    var target = !descriptorIn && ctor ? contextIn["static"] ? ctor : ctor.prototype : null;
+    var descriptor = descriptorIn || (target ? Object.getOwnPropertyDescriptor(target, contextIn.name) : {});
+    var _, done = false;
+    for(var i = decorators.length - 1; i >= 0; i--){
+        var context = {};
+        for(var p in contextIn)context[p] = p === "access" ? {} : contextIn[p];
+        for(var p in contextIn.access)context.access[p] = contextIn.access[p];
+        context.addInitializer = function(f) {
+            if (done) throw new TypeError("Cannot add initializers after decoration has completed");
+            extraInitializers.push(accept(f || null));
+        };
+        var result = (0, decorators[i])(kind === "accessor" ? {
+            get: descriptor.get,
+            set: descriptor.set
+        } : descriptor[key], context);
+        if (kind === "accessor") {
+            if (result === void 0) continue;
+            if (result === null || typeof result !== "object") throw new TypeError("Object expected");
+            if (_ = accept(result.get)) descriptor.get = _;
+            if (_ = accept(result.set)) descriptor.set = _;
+            if (_ = accept(result.init)) initializers.unshift(_);
+        } else if (_ = accept(result)) {
+            if (kind === "field") initializers.unshift(_);
+            else descriptor[key] = _;
+        }
+    }
+    if (target) Object.defineProperty(target, contextIn.name, descriptor);
+    done = true;
+}
+;
+function __runInitializers(thisArg, initializers, value) {
+    var useValue = arguments.length > 2;
+    for(var i = 0; i < initializers.length; i++){
+        value = useValue ? initializers[i].call(thisArg, value) : initializers[i].call(thisArg);
+    }
+    return useValue ? value : void 0;
+}
+;
+function __propKey(x) {
+    return typeof x === "symbol" ? x : "".concat(x);
+}
+;
+function __setFunctionName(f, name, prefix) {
+    if (typeof name === "symbol") name = name.description ? "[".concat(name.description, "]") : "";
+    return Object.defineProperty(f, "name", {
+        configurable: true,
+        value: prefix ? "".concat(prefix, " ", name) : name
+    });
+}
+;
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+            resolve(value);
+        });
+    }
+    return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+            try {
+                step(generator.next(value));
+            } catch (e) {
+                reject(e);
+            }
+        }
+        function rejected(value) {
+            try {
+                step(generator["throw"](value));
+            } catch (e) {
+                reject(e);
+            }
+        }
+        function step(result) {
+            result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+function __generator(thisArg, body) {
+    var _ = {
+        label: 0,
+        sent: function() {
+            if (t[0] & 1) throw t[1];
+            return t[1];
+        },
+        trys: [],
+        ops: []
+    }, f, y, t, g = Object.create((typeof Iterator === "function" ? Iterator : Object).prototype);
+    return g.next = verb(0), g["throw"] = verb(1), g["return"] = verb(2), typeof Symbol === "function" && (g[Symbol.iterator] = function() {
+        return this;
+    }), g;
+    //TURBOPACK unreachable
+    ;
+    function verb(n) {
+        return function(v) {
+            return step([
+                n,
+                v
+            ]);
+        };
+    }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while(g && (g = 0, op[0] && (_ = 0)), _)try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [
+                op[0] & 2,
+                t.value
+            ];
+            switch(op[0]){
+                case 0:
+                case 1:
+                    t = op;
+                    break;
+                case 4:
+                    _.label++;
+                    return {
+                        value: op[1],
+                        done: false
+                    };
+                case 5:
+                    _.label++;
+                    y = op[1];
+                    op = [
+                        0
+                    ];
+                    continue;
+                case 7:
+                    op = _.ops.pop();
+                    _.trys.pop();
+                    continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
+                        _ = 0;
+                        continue;
+                    }
+                    if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
+                        _.label = op[1];
+                        break;
+                    }
+                    if (op[0] === 6 && _.label < t[1]) {
+                        _.label = t[1];
+                        t = op;
+                        break;
+                    }
+                    if (t && _.label < t[2]) {
+                        _.label = t[2];
+                        _.ops.push(op);
+                        break;
+                    }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop();
+                    continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) {
+            op = [
+                6,
+                e
+            ];
+            y = 0;
+        } finally{
+            f = t = 0;
+        }
+        if (op[0] & 5) throw op[1];
+        return {
+            value: op[0] ? op[1] : void 0,
+            done: true
+        };
+    }
+}
+var __createBinding = Object.create ? function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = {
+            enumerable: true,
+            get: function() {
+                return m[k];
+            }
+        };
+    }
+    Object.defineProperty(o, k2, desc);
+} : function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+};
+function __exportStar(m, o) {
+    for(var p in m)if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) __createBinding(o, m, p);
+}
+function __values(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function() {
+            if (o && i >= o.length) o = void 0;
+            return {
+                value: o && o[i++],
+                done: !o
+            };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+}
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while((n === void 0 || n-- > 0) && !(r = i.next()).done)ar.push(r.value);
+    } catch (error) {
+        e = {
+            error: error
+        };
+    } finally{
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        } finally{
+            if (e) throw e.error;
+        }
+    }
+    return ar;
+}
+function __spread() {
+    for(var ar = [], i = 0; i < arguments.length; i++)ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+function __spreadArrays() {
+    for(var s = 0, i = 0, il = arguments.length; i < il; i++)s += arguments[i].length;
+    for(var r = Array(s), k = 0, i = 0; i < il; i++)for(var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)r[k] = a[j];
+    return r;
+}
+function __spreadArray(to, from, pack) {
+    if (pack || arguments.length === 2) for(var i = 0, l = from.length, ar; i < l; i++){
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+}
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = Object.create((typeof AsyncIterator === "function" ? AsyncIterator : Object).prototype), verb("next"), verb("throw"), verb("return", awaitReturn), i[Symbol.asyncIterator] = function() {
+        return this;
+    }, i;
+    //TURBOPACK unreachable
+    ;
+    function awaitReturn(f) {
+        return function(v) {
+            return Promise.resolve(v).then(f, reject);
+        };
+    }
+    function verb(n, f) {
+        if (g[n]) {
+            i[n] = function(v) {
+                return new Promise(function(a, b) {
+                    q.push([
+                        n,
+                        v,
+                        a,
+                        b
+                    ]) > 1 || resume(n, v);
+                });
+            };
+            if (f) i[n] = f(i[n]);
+        }
+    }
+    function resume(n, v) {
+        try {
+            step(g[n](v));
+        } catch (e) {
+            settle(q[0][3], e);
+        }
+    }
+    function step(r) {
+        r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r);
+    }
+    function fulfill(value) {
+        resume("next", value);
+    }
+    function reject(value) {
+        resume("throw", value);
+    }
+    function settle(f, v) {
+        if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]);
+    }
+}
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function(e) {
+        throw e;
+    }), verb("return"), i[Symbol.iterator] = function() {
+        return this;
+    }, i;
+    //TURBOPACK unreachable
+    ;
+    function verb(n, f) {
+        i[n] = o[n] ? function(v) {
+            return (p = !p) ? {
+                value: __await(o[n](v)),
+                done: false
+            } : f ? f(v) : v;
+        } : f;
+    }
+}
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function() {
+        return this;
+    }, i);
+    //TURBOPACK unreachable
+    ;
+    function verb(n) {
+        i[n] = o[n] && function(v) {
+            return new Promise(function(resolve, reject) {
+                v = o[n](v), settle(resolve, reject, v.done, v.value);
+            });
+        };
+    }
+    function settle(resolve, reject, d, v) {
+        Promise.resolve(v).then(function(v) {
+            resolve({
+                value: v,
+                done: d
+            });
+        }, reject);
+    }
+}
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) {
+        Object.defineProperty(cooked, "raw", {
+            value: raw
+        });
+    } else {
+        cooked.raw = raw;
+    }
+    return cooked;
+}
+;
+var __setModuleDefault = Object.create ? function(o, v) {
+    Object.defineProperty(o, "default", {
+        enumerable: true,
+        value: v
+    });
+} : function(o, v) {
+    o["default"] = v;
+};
+var ownKeys = function(o) {
+    ownKeys = Object.getOwnPropertyNames || function(o) {
+        var ar = [];
+        for(var k in o)if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+        return ar;
+    };
+    return ownKeys(o);
+};
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) {
+        for(var k = ownKeys(mod), i = 0; i < k.length; i++)if (k[i] !== "default") __createBinding(result, mod, k[i]);
+    }
+    __setModuleDefault(result, mod);
+    return result;
+}
+function __importDefault(mod) {
+    return mod && mod.__esModule ? mod : {
+        default: mod
+    };
+}
+function __classPrivateFieldGet(receiver, state, kind, f) {
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
+}
+function __classPrivateFieldSet(receiver, state, value, kind, f) {
+    if (kind === "m") throw new TypeError("Private method is not writable");
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+    return kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value), value;
+}
+function __classPrivateFieldIn(state, receiver) {
+    if (receiver === null || typeof receiver !== "object" && typeof receiver !== "function") throw new TypeError("Cannot use 'in' operator on non-object");
+    return typeof state === "function" ? receiver === state : state.has(receiver);
+}
+function __addDisposableResource(env, value, async) {
+    if (value !== null && value !== void 0) {
+        if (typeof value !== "object" && typeof value !== "function") throw new TypeError("Object expected.");
+        var dispose, inner;
+        if (async) {
+            if (!Symbol.asyncDispose) throw new TypeError("Symbol.asyncDispose is not defined.");
+            dispose = value[Symbol.asyncDispose];
+        }
+        if (dispose === void 0) {
+            if (!Symbol.dispose) throw new TypeError("Symbol.dispose is not defined.");
+            dispose = value[Symbol.dispose];
+            if (async) inner = dispose;
+        }
+        if (typeof dispose !== "function") throw new TypeError("Object not disposable.");
+        if (inner) dispose = function() {
+            try {
+                inner.call(this);
+            } catch (e) {
+                return Promise.reject(e);
+            }
+        };
+        env.stack.push({
+            value: value,
+            dispose: dispose,
+            async: async
+        });
+    } else if (async) {
+        env.stack.push({
+            async: true
+        });
+    }
+    return value;
+}
+var _SuppressedError = typeof SuppressedError === "function" ? SuppressedError : function(error, suppressed, message) {
+    var e = new Error(message);
+    return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
+};
+function __disposeResources(env) {
+    function fail(e) {
+        env.error = env.hasError ? new _SuppressedError(e, env.error, "An error was suppressed during disposal.") : e;
+        env.hasError = true;
+    }
+    var r, s = 0;
+    function next() {
+        while(r = env.stack.pop()){
+            try {
+                if (!r.async && s === 1) return s = 0, env.stack.push(r), Promise.resolve().then(next);
+                if (r.dispose) {
+                    var result = r.dispose.call(r.value);
+                    if (r.async) return s |= 2, Promise.resolve(result).then(next, function(e) {
+                        fail(e);
+                        return next();
+                    });
+                } else s |= 1;
+            } catch (e) {
+                fail(e);
+            }
+        }
+        if (s === 1) return env.hasError ? Promise.reject(env.error) : Promise.resolve();
+        if (env.hasError) throw env.error;
+    }
+    return next();
+}
+function __rewriteRelativeImportExtension(path, preserveJsx) {
+    if (typeof path === "string" && /^\.\.?\//.test(path)) {
+        return path.replace(/\.(tsx)$|((?:\.d)?)((?:\.[^./]+?)?)\.([cm]?)ts$/i, function(m, tsx, d, ext, cm) {
+            return tsx ? preserveJsx ? ".jsx" : ".js" : d && (!ext || !cm) ? m : d + ext + "." + cm.toLowerCase() + "js";
+        });
+    }
+    return path;
+}
+const __TURBOPACK__default__export__ = {
+    __extends,
+    __assign,
+    __rest,
+    __decorate,
+    __param,
+    __esDecorate,
+    __runInitializers,
+    __propKey,
+    __setFunctionName,
+    __metadata,
+    __awaiter,
+    __generator,
+    __createBinding,
+    __exportStar,
+    __values,
+    __read,
+    __spread,
+    __spreadArrays,
+    __spreadArray,
+    __await,
+    __asyncGenerator,
+    __asyncDelegator,
+    __asyncValues,
+    __makeTemplateObject,
+    __importStar,
+    __importDefault,
+    __classPrivateFieldGet,
+    __classPrivateFieldSet,
+    __classPrivateFieldIn,
+    __addDisposableResource,
+    __disposeResources,
+    __rewriteRelativeImportExtension
+};
 }),
 "[project]/node_modules/@supabase/auth-js/dist/module/lib/version.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -16485,7 +17150,7 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$auth$2d$js$2f$dist$2f$module$2f$AuthClient$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/auth-js/dist/module/AuthClient.js [app-client] (ecmascript)");
 }),
-"[project]/node_modules/@supabase/supabase-js/dist/index.mjs [app-client] (ecmascript) <locals>", ((__turbopack_context__) => {
+"[project]/client/node_modules/@supabase/supabase-js/dist/index.mjs [app-client] (ecmascript) <locals>", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
@@ -16494,12 +17159,12 @@ __turbopack_context__.s([
     "createClient",
     ()=>createClient
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$types$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/functions-js/dist/module/types.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$FunctionsClient$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/functions-js/dist/module/FunctionsClient.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$postgrest$2d$js$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/postgrest-js/dist/index.mjs [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/index.js [app-client] (ecmascript) <locals>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimeClient$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__RealtimeClient$3e$__ = __turbopack_context__.i("[project]/node_modules/@supabase/realtime-js/dist/module/RealtimeClient.js [app-client] (ecmascript) <export default as RealtimeClient>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$storage$2d$js$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@supabase/storage-js/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$types$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/functions-js/dist/module/types.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$FunctionsClient$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/functions-js/dist/module/FunctionsClient.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$postgrest$2d$js$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/postgrest-js/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/index.js [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimeClient$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__RealtimeClient$3e$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/realtime-js/dist/module/RealtimeClient.js [app-client] (ecmascript) <export default as RealtimeClient>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$storage$2d$js$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/client/node_modules/@supabase/storage-js/dist/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$auth$2d$js$2f$dist$2f$module$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/@supabase/auth-js/dist/module/index.js [app-client] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$auth$2d$js$2f$dist$2f$module$2f$AuthClient$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AuthClient$3e$__ = __turbopack_context__.i("[project]/node_modules/@supabase/auth-js/dist/module/AuthClient.js [app-client] (ecmascript) <export default as AuthClient>");
 ;
@@ -16510,7 +17175,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2
 ;
 ;
 //#region src/lib/version.ts
-const version = "2.97.0";
+const version = "2.98.0";
 //#endregion
 //#region src/lib/constants.ts
 let JS_ENV = "";
@@ -16730,20 +17395,20 @@ var SupabaseAuthClient = class extends __TURBOPACK__imported__module__$5b$projec
             accessToken: this._getAccessToken.bind(this)
         }, settings.realtime));
         if (this.accessToken) Promise.resolve(this.accessToken()).then((token)=>this.realtime.setAuth(token)).catch((e)=>console.warn("Failed to set initial Realtime auth token:", e));
-        this.rest = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$postgrest$2d$js$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PostgrestClient"](new URL("rest/v1", baseUrl).href, {
+        this.rest = new __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$postgrest$2d$js$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PostgrestClient"](new URL("rest/v1", baseUrl).href, {
             headers: this.headers,
             schema: settings.db.schema,
             fetch: this.fetch,
             timeout: settings.db.timeout,
             urlLengthLimit: settings.db.urlLengthLimit
         });
-        this.storage = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$storage$2d$js$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StorageClient"](this.storageUrl.href, this.headers, this.fetch, options === null || options === void 0 ? void 0 : options.storage);
+        this.storage = new __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$storage$2d$js$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StorageClient"](this.storageUrl.href, this.headers, this.fetch, options === null || options === void 0 ? void 0 : options.storage);
         if (!settings.accessToken) this._listenForAuthEvents();
     }
     /**
 	* Supabase Functions allows you to deploy and invoke edge functions.
 	*/ get functions() {
-        return new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$FunctionsClient$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FunctionsClient"](this.functionsUrl.href, {
+        return new __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$functions$2d$js$2f$dist$2f$module$2f$FunctionsClient$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FunctionsClient"](this.functionsUrl.href, {
             headers: this.headers,
             customFetch: this.fetch
         });
@@ -16852,7 +17517,7 @@ var SupabaseAuthClient = class extends __TURBOPACK__imported__module__$5b$projec
         });
     }
     _initRealtimeClient(options) {
-        return new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimeClient$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__RealtimeClient$3e$__["RealtimeClient"](this.realtimeUrl.href, _objectSpread2(_objectSpread2({}, options), {}, {
+        return new __TURBOPACK__imported__module__$5b$project$5d2f$client$2f$node_modules$2f40$supabase$2f$realtime$2d$js$2f$dist$2f$module$2f$RealtimeClient$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__RealtimeClient$3e$__["RealtimeClient"](this.realtimeUrl.href, _objectSpread2(_objectSpread2({}, options), {}, {
             params: _objectSpread2(_objectSpread2({}, {
                 apikey: this.supabaseKey
             }), options === null || options === void 0 ? void 0 : options.params)
@@ -16905,4 +17570,4 @@ if (shouldShowDeprecationWarning()) console.warn("⚠️  Node.js 18 and below a
 }),
 ]);
 
-//# sourceMappingURL=_b85f84a9._.js.map
+//# sourceMappingURL=_3a950091._.js.map
